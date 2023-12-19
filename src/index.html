@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body
+    class="flex justify-center items-center flex-col gap-[30px] min-h-screen bg-primary md:p-[100px] p-2 text-primary"
+  >
+    <div
+      id="main-container"
+      class="w-full h-full shadow-md rounded-xl bg-white"
+    >
+      <header
+        class="flex justify-between items-center md:px-[50px] px-2 py-7 relative"
+      >
+        <div class="flex items-center">
+          <img
+            src="../assets/computer.webp"
+            alt="Logo-Komputer-Ungu"
+            class="w-[78px]"
+            id="logo-kiri"
+          />
+          <h1 class="text-2xl text-primary">Welcome</h1>
+        </div>
+        <button id="toggleBtn" class="lg:hidden">
+          <svg
+            class="w-6 h-6 text-primary"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="dropdownMenu"
+          class="hidden absolute w-full right-0 top-3/4 bg-primary-300 rounded-md text-white"
+        >
+          <a href="index.html" class="block p-3 border border-secondary"
+            >Home</a
+          >
+          <a href="about.html" class="block p-3 border border-secondary"
+            >About</a
+          >
+        </div>
+        <nav class="md:flex gap-2 hidden text-primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
+      <main class="flex md:px-[50px] p-3 flex-wrap">
+        <div
+          id="form-card"
+          class="md:w-1/2 w-full md:p-[50px] p-[20px] bg-secondary rounded-lg"
+        >
+          <h1 class="text-2xl text-primary">Welcome to Our Landing Page</h1>
+          <p class="text-primar">Please login to access other feature</p>
+          <form
+            action=""
+            class="text-primary mt-5 flex flex-col gap-3"
+            onsubmit="return validateForm(event)"
+          >
+            <span id="errorForm" class="text-red-600"></span>
+            <div class="">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="mt-1 p-2 w-full border rounded-md focus:ring-0"
+                placeholder="Enter your Username"
+              />
+              <span id="errorNama" class="text-red-600"></span>
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="mt-1 p-2 w-full border rounded-md focus:ring-0"
+                placeholder="Enter your Password"
+              />
+              <span id="errorPassword" class="text-red-600"></span>
+            </div>
+            <span id="capsLockWarning" class="warning text-yellow-900"
+              >Warning! Caps lock is ON.</span
+            >
+            <div class="mb-4 flex items-center mt-2 gap-1">
+              <input
+                type="checkbox"
+                id="showPassword"
+                name="Remember-me"
+                class="border border-primary rounded-sm focus:ring-0 focus:ring-offset-0 accent-primary text-primary focus:ring-p"
+              />
+              <label for="Remember"> Show Password</label>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-primary text-white px-4 py-2 rounded-md focus:outline-none focus:shadow-outline-blue w-full"
+            >
+              Sign-in
+            </button>
+          </form>
+        </div>
+        <div
+          class="md:w-1/2 p-[50px] flex flex-col items-center justify-center"
+        >
+          <img src="../assets/computer.webp" alt="" class="md:w-1/2 w-full" />
+          <p class="text-center">
+            "The only limit to our realization of tomorrow will be our doubts of
+            today." - Franklin D. Roosevelt
+          </p>
+        </div>
+      </main>
+      <footer>
+        <p class="text-center py-8 pb-9">&copy; 2023 Landing Page</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

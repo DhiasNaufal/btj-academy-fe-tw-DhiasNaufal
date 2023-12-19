@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body
+    class="flex justify-center items-center flex-col gap-[30px] min-h-screen bg-primary md:px-[60px] p-2"
+  >
+    <div
+      id="main-container"
+      class="w-full h-full shadow-md rounded-xl bg-white"
+    >
+      <header
+        class="flex justify-between items-center md:px-[50px] px-2 py-7 relative"
+      >
+        <div class="flex items-center">
+          <img
+            src="../assets/yas-emoji.jpeg"
+            alt="Logo-Komputer-Ungu"
+            class="w-[78px]"
+            id="logo-dhias"
+          />
+          <h1 class="text-2xl text-primary">About Me!</h1>
+        </div>
+        <div class="flex gap-4">
+          <label for="toggle" class="flex items-center cursor-pointer">
+            <div class="relative">
+              <input type="checkbox" id="toggle" class="hidden" />
+              <div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+              <div
+                class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"
+              ></div>
+            </div>
+          </label>
+          <button id="toggleBtn" class="lg:hidden">
+            <svg
+              class="w-6 h-6 text-primary"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="dropdownMenu"
+            class="hidden absolute w-full right-0 top-3/4 bg-primary-300 rounded-md text-white"
+          >
+            <a href="index.html" class="block p-3 border border-secondary"
+              >Home</a
+            >
+            <a href="about.html" class="block p-3 border border-secondary"
+              >About</a
+            >
+          </div>
+
+          <nav class="md:flex gap-2 hidden">
+            <a href="index.html">Home</a>
+            <a href="abouts.html">About</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <p class="text-center">This is Everything About Me!</p>
+        <section
+          class="flex md:px-[50px] p-2 flex-wrap text-primary gap-7 sm:gap-0"
+        >
+          <div
+            class="sm:w-1/2 flex flex-col justify-center items-center sm:p-10"
+          >
+            <img
+              src="../assets/portrait.jpg"
+              alt=""
+              class="sm:w-1/2 rounded-lg"
+            />
+            <p class="text-center">
+              "Successful is created by the best combination between Commitment,
+              Discipline and Consistency" -ceunah
+            </p>
+          </div>
+          <div
+            class="sm:w-1/2 flex flex-col justify-center items-center sm:p-10"
+          >
+            <p>Hello There! i'm</p>
+            <h1 class="text-4xl text-center">Dhias Muhammad Naufal</h1>
+            <p class="my-2">Soon to be Front-end Engineer</p>
+            <div class="mt-2">
+              <a
+                href="#project"
+                class="bg-primary text-white p-2 px-3 m-1 rounded-lg"
+                >See my Work</a
+              >
+              <a
+                href="#work"
+                class="bg-primary text-white p-2 px-3 m-1 rounded-lg"
+                >Working Experience</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Education -->
+        <h1 class="text-center text-4xl sm:mt-0 mt-7">Summary</h1>
+        <section class="flex md:px-[50px] p-2 flex-wrap">
+          <div
+            class="sm:w-1/2 flex flex-col justify-center items-center sm:p-10"
+          >
+            <p class="text-justify">
+              A passionate and determined recent graduate in Information
+              Engineering, committed to continuous learning and eager to apply
+              my knowledge to real-world challenges. I am highly interested in
+              the field of Software Engineering, such as designing applications
+              and solving problems that arise within software systems. A curious
+              thinker who's ambitious, loves learning, doesn't give up easily,
+              and enjoys solving problems. I thrive in both team-oriented
+              environments, where collaboration fosters innovation, and when
+              working independently to tackle complex problems.
+            </p>
+          </div>
+          <div
+            class="sm:w-1/2 flex flex-col justify-center items-center sm:p-10"
+          >
+            <img src="../assets/kmteti.png" alt="" class="sm:w-1/4 w-[1px]" />
+            <p class="text-center">Gadjah Mada University</p>
+            <p class="text-center">
+              Teknnologi Informasi/Information Engineering
+            </p>
+          </div>
+        </section>
+        <!-- Worki Exp -->
+        <h1 id="work" class="text-center text-4xl sm:mt-0 mt-7">
+          Working Experience
+        </h1>
+        <section class="flex md:px-[50px] p-2 flex-wrap sm:mt-0 mt-7">
+          <div
+            class="sm:w-1/2 flex flex-col justify-center items-center sm:p-10 gap-4"
+          >
+            <h1 class="text-xl font-bold text-primary text-center">
+              Flutter Developer at KHDTK Wanagama
+            </h1>
+            <ul class="sm:list-disc text-justify">
+              <li>
+                Translate the client need into software requirements to ensure
+                that the development process aligns with the customer's
+                expectations
+              </li>
+              <li>
+                Successfully developed a comprehensive Flutter application known
+                as the Wanagama App, specifically designed for the purpose of
+                online booking.
+              </li>
+              <li>
+                Successfully created documentation for the Wanagama App,
+                including the creation of a System Requirements Specification
+                (SRS) to facilitate further development needs.
+              </li>
+              <li>
+                Effectively showcased the completed application to the Wanagama
+                Directorate during a comprehensive final presentation,
+                highlighting its features, functionality, and potential impact.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="sm:w-1/2 flex flex-col items-center sm:p-10 gap-4 justify-start"
+          >
+            <h1 class="text-xl font-bold text-primary sm:mt-0 mt-4">
+              PT Ylabs Indonesia
+            </h1>
+            <ul class="sm:list-disc text-justify">
+              <li>
+                Successfully organized the Developer Bootcamp event, focusing on
+                startup technology in Indonesia, engaging more than 80
+                participants.
+              </li>
+              <li>
+                Orchestrated the Hustler event, delving into business strategy
+                and investor pitching, drawing the participation of over 100
+                attendees from across Indonesia.
+              </li>
+              <li>
+                Hosted the Ytalks talk show, shedding light on successful
+                startup strategies, which garnered the attendance of 100
+                participants.
+              </li>
+              <li>
+                Conducted two webinars that effectively attracted a 100+
+                participant audience, promoting the company's programs.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Project -->
+        <h1 id="project" class="text-center text-4xl sm:mt-0 mt-7">Projects</h1>
+        <section class="flex md:px-[50px] p-2 flex-wrap gap-3 justify-center">
+          <div
+            class="sm:w-2/5 flex flex-col justify-center items-center sm:p-10 gap-4 p-6 shadow-md"
+          >
+            <img src="../assets/Wanagama.png" alt="wanagama-project" />
+            <button
+              class="bg-primary p-2 px-4 text-white rounded-lg"
+              onclick="location.href='https://github.com/DhiasNaufal/wanagama-mobile-app'"
+            >
+              github repo
+            </button>
+          </div>
+          <div
+            class="sm:w-2/5 flex flex-col justify-center items-center sm:p-10 gap-4 p-6 shadow-md"
+          >
+            <img src="../assets/Medq.png" alt="MEDQ-project" />
+
+            <button
+              class="bg-primary p-2 px-4 text-white rounded-lg"
+              onclick="location.href='https://github.com/DhiasNaufal/MedQ_App'"
+            >
+              github repo
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p class="text-center py-7">&copy; 2023 Landing Page</p>
+      </footer>
+    </div>
+    <script src="about-script.js"></script>
+  </body>
+</html>
